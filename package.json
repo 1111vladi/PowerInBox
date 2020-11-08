@@ -1,0 +1,29 @@
+{
+  "name": "automation_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/test/functional/functionalApi.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "open:report:mac": "open mochawesome-report/mochawesome.html",
+    "open:report:windows": "start mochawesome-report/mochawesome.html",
+    "test:awesome": "mocha src/test/functional/functionalApi.js --reporter mochawesome"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "config": "^1.20.1",
+    "express": "^4.13.4",
+    "mongoose": "^4.4.15",
+    "morgan": "^1.7.0",
+    "xml2js": "^0.4.23"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^2.0.1",
+    "mocha": "^7.1.0",
+    "mochawesome": "^6.2.1"
+  }
+}
